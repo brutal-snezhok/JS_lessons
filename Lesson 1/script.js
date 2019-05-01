@@ -2,6 +2,7 @@
 
 a = 5;
 console.log(a);
+
 // var number = 5;
 // var string = "Hello";
 // var sym = Symbol();
