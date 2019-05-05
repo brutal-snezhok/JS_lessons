@@ -10,24 +10,52 @@
 //     return a + b;
 // }
 
-let calc = (a,b) => a + b;
-console.log(calc(3, 4));
-console.log(calc(8, 4));
+// let calc = (a,b) => a + b;
+// console.log(calc(3, 4));
+// console.log(calc(8, 4));
 
-function retVar(){
-    let num = 50;
-    return num;
+// function retVar(){
+//     let num = 50;
+//     return num;
+// }
+
+// let anotherNum = retVar();
+
+// let str = "test";
+// console.log(str.length);
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// let twelve = "12.2px";
+
+// console.log(parseInt(twelve));
+// console.log(parseFloat(twelve));
+
+function first(){
+    setTimeout(
+        function(){
+            console.log(1);
+        }, 500
+    );
 }
 
-let anotherNum = retVar();
+function second(){
+    console.log(2);
+}
 
-let str = "test";
-console.log(str.length);
+first();
+second();
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
 
-let twelve = "12.2px";
+//callbacks
+function learnJS(lang, callback){
+    console.log("I learn " + lang);
+    callback();
+}
 
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
+function done(){
+    console.log("I completed third lesson");
+}
+
+learnJS("JavaScript", done);
